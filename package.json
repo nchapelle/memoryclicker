@@ -13,7 +13,6 @@
     "react-scripts": "3.3.0",
     "reactstrap": "^8.2.0"
   },
-  "homepage": "http://nchapelle.github.io/RightInTheClicker",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
