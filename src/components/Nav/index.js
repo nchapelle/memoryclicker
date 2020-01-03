@@ -1,21 +1,22 @@
 import React from "react";
+import "./style.css";
 
-function Nav() {
+function Nav(props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <ul>
-        <li className="brand">
-          <a className="navbar-brand" href="/">
-            Memory Clicky Game
+    <nav className="navbar">
+        <span class="navbar-text">    
+      <ul className="">
+        <li>
+          <a className="brand" href="/">
+            Clicky Game
           </a>
         </li>
-        <li className="message"> 
-          Message Goes Here Correct / Incorrect
-        </li>
-        <li className="HighScores">
-        Your Score= X and High Score = Z
+        <li className="message">{props.message}</li>
+        <li className="">
+          Current Score: {props.currentScore} | High Score: {props.highScore}
         </li>
       </ul>
+      </span>
     </nav>
   );
 }
