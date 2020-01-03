@@ -4,7 +4,7 @@ import "./style.css";
 function Nav(props) {
   return (
     <nav className="navbar">
-        <span class="navbar-text">    
+        <span className="navbar-text">    
       <ul className="">
         <li>
           <a className="brand" href="/">
